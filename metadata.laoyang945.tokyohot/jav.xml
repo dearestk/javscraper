@@ -25,8 +25,8 @@
 			<RegExp input="$$1" output="&lt;year&gt;\1&lt;/year&gt;" dest="8+">
 				<expression>&lt;dt&gt;配信開始日&lt;/dt&gt;.*? &lt;dd&gt;([0-9]{4})/[0-9]{1,2}/[0-9]{1,2}&lt;/dd&gt;</expression>
 			</RegExp>
-			<RegExp input="$$1" output="&lt;thumb&gt;http://cdn.my.tokyo-hot.com/media/\1/package/_v.jpg&lt;/thumb&gt;&lt;thumb&gt;http://cdn.my.tokyo-hot.com/media/\1/package/_vb.jpg&lt;/thumb&gt;&lt;fanart&gt;&lt;thumb&gt;http://cdn.my.tokyo-hot.com/media/\1/jacket/\2.jpg&lt;/thumb&gt;&lt;/fanart&gt;" dest="8+">
-					<expression>&lt;a href="http://cdn.my.tokyo-hot.com/media/([0-9]*?)/jacket/(.*?)\.jpg"&gt;</expression>
+			<RegExp input="$$1" output="&lt;thumb&gt;http://my.cdn.tokyo-hot.com/media/\1/package/_v.jpg&lt;/thumb&gt;&lt;thumb&gt;http://my.cdn.tokyo-hot.com/media/\1/package/_vb.jpg&lt;/thumb&gt;&lt;fanart&gt;&lt;thumb&gt;http://my.cdn.tokyo-hot.com/media/\1/jacket/\2.jpg&lt;/thumb&gt;&lt;/fanart&gt;" dest="8+">
+					<expression>&lt;a href="http://my.cdn.tokyo-hot.com/media/([0-9]*?)/jacket/(.*?)\.jpg"&gt;</expression>
 			</RegExp>
 			<RegExp input="$$1" output="&lt;studio&gt;Tokyo-Hot&lt;/studio&gt;" dest="8+">
 				<expression />
@@ -41,7 +41,7 @@
 				<expression repeat="yes">&lt;a href="/product/\?type=.{4,5}&amp;filter=.*?"&gt;(.*?)&lt;/a&gt;</expression>
 			</RegExp>
 			<RegExp input="$$1" output="&lt;actor&gt;&lt;thumb&gt;http://my.tokyo-hot.com/media/cast/\1/thumbnail.jpg&lt;/thumb&gt;&lt;name&gt;\2&lt;/name&gt;&lt;/actor&gt;" dest="8+">
-				<expression repeat="yes">&lt;dd&gt;&lt;a href="/cast/([0-9]*?)/"&gt;(.*?)&lt;/a&gt;.*?&lt;/dd&gt;</expression>
+				<expression repeat="yes">&lt;a href="/cast/([0-9]*?)/"&gt;(.*?)&lt;/a&gt;</expression>
 			</RegExp>
 			<expression noclean="1" />
 		</RegExp>

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?><scraper framework="1.1" date="2013-11-29" name="jav" content="movies" language="en">
+﻿<?xml version="1.0" encoding="utf-8"?><scraper framework="1.1" date="2014-06-16" name="jav" content="movies" language="en">
 	<NfoUrl dest="3">
 		<RegExp input="$$1" output="\1" dest="3">
 			<expression encode="1" />
@@ -44,7 +44,7 @@
 				<expression>監督:&lt;/td&gt;\s*&lt;td class="list2"&gt;\s*&lt;a href="/cast_[0-9]{5}.html"&gt;(.*?)&lt;/a&gt;</expression>
 			</RegExp>
 			<RegExp input="$$1" output="&lt;plot&gt;\1&lt;/plot&gt;" dest="8+">
-				<expression>&lt;td class="text" colspan="2"&gt;&lt;br&gt;\s*(.*?)&lt;/td&gt;</expression>
+				<expression>&lt;td class="text" colspan="2"&gt;&lt;br\s?/&gt;\s*(.*?)&lt;/td&gt;</expression>
 			</RegExp>
 			<RegExp input="$$1" output="&lt;genre&gt;\1&lt;/genre&gt;" dest="8+">
 				<expression repeat="yes">&lt;a href="/itemlist.html\?multignr\[\]=[0-9]{5}"&gt;(.*?)&lt;/a&gt;</expression>
