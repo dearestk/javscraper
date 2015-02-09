@@ -28,8 +28,8 @@
 			<RegExp input="$$1" output="&lt;year&gt;\1&lt;/year&gt;" dest="8+">
 				<expression>発売日:&lt;/span&gt;\s[0-9]{1,2}/[0-9]{1,2}/([0-9]{4})</expression>
 			</RegExp>
-			<RegExp input="$$1" output="&lt;thumb&gt;http://imgs.aventertainments.com/\1jacket_images/\2&lt;/thumb&gt;&lt;fanart&gt;&lt;thumb&gt;http://imgs.aventertainments.com/\1bigcover/\2&lt;/thumb&gt;&lt;/fanart&gt;" dest="8+">
-				<expression>&lt;img src="http://imgs.aventertainments.com/(new/)?jacket_images/([0-9A-Za-z\-]*?\.jpg)" alt="" border="0" align="left" /&gt;</expression>
+			<RegExp input="$$1" output="&lt;thumb&gt;http://imgs.aventertainments.com/\1\2jacket_images/\3&lt;/thumb&gt;&lt;fanart&gt;&lt;thumb&gt;http://imgs.aventertainments.com/\1\2bigcover/\3&lt;/thumb&gt;&lt;/fanart&gt;" dest="8+">
+				<expression>&lt;img src="http://imgs.aventertainments.com/(new/)?(archive/)?jacket_images/([0-9A-Za-z\-]*?\.jpg)" alt="" border="0" align="left" /&gt;</expression>
 			</RegExp>
 			<RegExp input="$$1" output="&lt;studio&gt;\1&lt;/studio&gt;" dest="8+">
 				<expression>スタジオ:&lt;/span&gt; &lt;a href="http://www.aventertainments.com/studio_products.aspx\?StudioID=[0-9]*&amp;Dept_ID=29&amp;languageID=2"&gt;(.*?)&lt;/a&gt;</expression>
