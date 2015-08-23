@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="metadata.laoyang945.censored"
-		name="censored JAV Scraper"
+<addon id="metadata.laoyang945.arzon"
+		name="Japanese AV scraper for arzon.jp"
 		version="4.0"
 		provider-name="laoyang945">
 		<requires>
@@ -10,7 +10,7 @@
 				library="jav.xml"/>
 		<extension point="xbmc.addon.metadata">
 				<summary lang="en">Japanese Adult Video Scraper</summary>
-				<description lang="en">Download metadata and thumbnail for your censored Japanese AV collection</description>
+				<description lang="en">Download metadata and thumbnail from arzon.jp for your censored Japanese AV collection</description>
 				<platform>all</platform>
 		</extension>
 </addon>

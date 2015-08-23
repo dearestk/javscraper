@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="metadata.laoyang945.uncensored"
-		name="uncensored JAV Scraper"
+<addon id="metadata.laoyang945.aventertainments"
+		name="JAV Scraper from aventertainments.com"
 		version="3.0"
 		provider-name="laoyang945">
 		<requires>
@@ -10,7 +10,7 @@
 				library="jav.xml"/>
 		<extension point="xbmc.addon.metadata">
 				<summary lang="en">Japanese Adult Video Scraper</summary>
-				<description lang="en">Download metadata and thumbnail for your Japanese AV collection</description>
+				<description lang="en">Download metadata and thumbnail from aventertainments.com for your uncensored Japanese AV collection</description>
 				<platform>all</platform>
 		</extension>
 </addon>
